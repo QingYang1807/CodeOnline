@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" href="css/loginStyle.css" th:href="@{css/loginStyle.css}">
+    <script type="text/javascript" href="js/jquery.min.js"></script>
+
+</head>
+<body class="text-center">
+<form class="form-signin" action="/user/insertUser" th:action="@{/user/insertUser}" method="post">
+    <img class="mb-4" th:src="@{/img/bootstrap-solid.svg}" src="mg/bootstrap-solid.svg" alt="" width="180" height="180">
+    <h1 class="h3 mb-3 font-weight-normal" th:text="#{tip}">Please sign in</h1>
+    <!--判断-->
+    <label class="sr-only">请输入账号</label>
+    <input type="text" name="username" class="form-control" placeholder="用户名"
+           th:placeholder="#{username}" required="" autofocus="账号">
+    <label class="sr-only" th:text="请输入密码">Password</label>
+    <input type="password" name="password" class="form-control" placeholder="Password"
+           th:placeholder="#{password}" required="">
+    <input type="password2" name="password2" class="form-control" placeholder="Password again"
+           th:placeholder="#{repassword}" required="">
+
+    <a class="btn btn-sm" href="/login">已有账号？点我登录</a>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{btn}">
+        Sign up</button>
+    <p class="mt-5 mb-3 text-muted">© 2020-2021</p>
+    <a class="btn btn-sm" th:href="@{/regist(l='zh_CN')}">中文</a>
+    <a class="btn btn-sm" th:href="@{/regist(l='en_US')}">English</a>
+</form>
+</body>
+</html>

@@ -1,0 +1,175 @@
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+}
+.navigation_bar{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+.logo_word{
+    display: inline;
+    color: #FFFFFF;
+    font-size: 33px;
+    position: absolute;
+    margin: 7px 15px 15px 20px;
+}
+.nav_btn{
+    display: inline-block;
+    width: auto;
+    /* height: 100%; */
+    border-radius: 3px;
+    border: 1px solid #FFF;
+    position: relative;
+    left: 230px;
+    color: #FFFFFF;
+    font-size: 26px;
+    padding: 12px 10px 12px 10px;
+}
+.nav_btn:hover{
+    background: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+}
+.nav_btn span{
+    display: inline;
+}
+
+/*主界面*/
+.MainContent{
+    display: block;
+    /*border: 2px solid red;*/
+}
+/*功能面板*/
+.fun_panel{
+    /*border: 1px solid #000000;*/
+    height: 50px;
+    background: #000000;
+    color: #FFFFFF;
+}
+.fs-wrap{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    height: 30px;
+    border: 2px solid #FFF;
+}
+.fs-wrap:hover{
+    background: #FFF;
+    color: #000;
+}
+.fs-label{
+    text-align: center;
+    font-size: 16px;
+}
+.fs-option,.fs-optgroup-label{
+    color: #000;
+}
+.fun_btn{
+    /*border: 2px solid #FFFFFF;*/
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    top: 6px;
+}
+.fun_btn:hover{
+    background: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+}
+.fun_btn span{
+    font-size: 20px;
+}
+.nb4{
+    position: relative;
+    left: 863px;
+    border: none;
+}
+
+/*CodeArea Style*/
+.operate_row{
+    padding: 10px;
+    height: 540px;
+}
+.left_area{
+    display: inline-block;
+    /*border: 3px solid #a3a3a3;*/
+    height: 520px;
+    width: 49%;
+    position: relative;
+    top: -5px;
+
+}
+.right_area{
+    display: inline-block;
+    /*border: 3px solid #a3a3a3;*/
+    height: 520px;
+    width: 49.6%;
+    position: relative;
+    top: -4px;
+}
+.notice{
+    border-bottom: 2px solid #a3a3a3;
+    width: 100%;
+    height: 30px;
+    text-align: center;padding: 5px 0 0 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.console_area{
+    border-bottom: 2px solid #A3A3A3;
+    height: 230px;
+    overflow: hidden;
+}
+.result_area{
+    height: 213px;
+    overflow: hidden;
+}
+
+/*[编码区域]、[结果区域]、[控制台输出区域]字体大小*/
+.CodeMirror-code{
+    font-size: 18px;
+}
+
+.outText_console .CodeMirror{
+    /*border: 4px solid #007eff;*/
+    height: 230px;
+}
+.outText_result .CodeMirror{
+    /*border: 4px solid #c700ff;*/
+    height: 209px;
+}
+
+
+/*下拉菜单样式*/
+.drop_down_style{
+    width: 130px;
+    height: 36px;
+    position: relative;
+    left: 50px;
+    top: 7px;
+    background: #000;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding-left: 10px;
+    font-size: 19px;
+}
+
+/*底部版权信息*/
+.copyright_info{
+    background: #d9d9d961;
+    width: 100%;
+    height: 50px;
+}
+.copyright_info span{
+    margin: 0 40%;
+    position: relative;
+    top:12px;
+    font-size: 20px;
+}
